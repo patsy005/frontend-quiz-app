@@ -40,6 +40,7 @@ function reducer(state, action) {
 				...state,
 				isLoading: false,
 				answer: action.payload,
+				correctAnswer: state.questions.at(state.index).answer,
 			}
 		case 'submitAnswer':
 			return {
@@ -47,7 +48,7 @@ function reducer(state, action) {
 				isLoading: false,
 				points: state.correctAnswer === state.answer ? state.points + 1 : state.points,
 				answerSubmit: true,
-				correctAnswer: state.questions.at(state.index).answer,
+				// correctAnswer: state.questions.at(state.index).answer,
 				error: !state.answer ? 'Please select an answer' : '',
 			}
 
@@ -56,7 +57,7 @@ function reducer(state, action) {
 				...state,
 				answer: null,
 				index: state.index + 1,
-				points: state.correctAnswer === state.answer ? state.points + 1 : state.points,
+				// points: state.correctAnswer === state.answer ? state.points + 1 : state.points,
 				options: state.questions.at(state.index + 1).options,
 				answerSubmit: false,
 				correctAnswer: state.questions.at(state.index).answer,
