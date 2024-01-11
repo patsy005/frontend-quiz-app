@@ -3,7 +3,7 @@
 		{
 			"title": "HTML",
 			"id": 1111,
-			"icon": "/src/assets/images/icon-html.svg",
+			"icon": "/images/icon-html.svg",
 			"questions": [
 				{
 					"question": "What does HTML stand for?",
