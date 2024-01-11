@@ -1,0 +1,121 @@
+
+.cateogryBtn:nth-child(1) .cateogrySquare {
+	background-color: #fff1e9;
+}
+.cateogryBtn:nth-child(2) .cateogrySquare {
+	background-color: #e0fdef;
+}
+.cateogryBtn:nth-child(3) .cateogrySquare {
+	background-color: #ebf0ff;
+}
+.cateogryBtn:nth-child(4) .cateogrySquare {
+	background-color: #f6e7ff;
+}
+.cateogryBtn:focus {
+	outline: none;
+}
+.cateogryBtn:hover:nth-of-type(1),
+.cateogryBtn:focus:nth-of-type(1) {
+	box-shadow: 0px 0px 0px 1px #ff7e35;
+}
+.cateogryBtn:hover:nth-of-type(2),
+.cateogryBtn:focus:nth-of-type(2) {
+	box-shadow: 0px 0px 0px 1px #2fd887;
+}
+.cateogryBtn:hover:nth-of-type(3),
+.cateogryBtn:focus:nth-of-type(3) {
+	box-shadow: 0px 0px 0px 1px #306aff;
+}
+.cateogryBtn:hover:nth-of-type(4),
+.cateogryBtn:focus:nth-of-type(4) {
+	box-shadow: 0px 0px 0px 1px #a729f5;
+}
+
+.answerBtn .box {
+	font-size: 1.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+.answerBtn .answerBox {
+	display: flex;
+	justify-content: space-between;
+}
+.answerBtn .answerBox img {
+	display: none;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.answerBtn:hover .answerSquare {
+	background-color: #f6e7ff;
+}
+.answerBtn:hover .answerSquare p {
+	color: #a729f5;
+}
+.answerBtn:focus {
+	outline: none;
+}
+.answerBtn:focus:nth-of-type(1),
+.answerBtn:focus:nth-of-type(2),
+.answerBtn:focus:nth-of-type(3),
+.answerBtn:focus:nth-of-type(4) {
+	box-shadow: 0px 0px 0px 1px #a729f5;
+}
+.answerBtn:focus .answerSquare {
+	background-color: #a729f5;
+}
+.answerBtn:focus .answerSquare p {
+	color: #fff;
+}
+.correctAnswer img,
+.pickedCorrectly img,
+.pickedIncorrectly img {
+	display: block !important;
+}
+
+.pickedCorrectly {
+	box-shadow: 0px 0px 0px 1px #26d782;
+}
+
+.pickedIncorrectly {
+	box-shadow: 0px 0px 0px 1px #ee5454;
+}
+
+.category p {
+	color: var(--primary-text);
+	font-size: 1.8rem;
+}
+
+.listBox {
+	border-radius: 24px;
+	border: transparent;
+	background-color: var(--box-color);
+	padding: 0.5em;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 100%;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-shadow: var(--box-shadow);
+}
+
+.listSquare {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s;
+}
+.listSquare img {
+	width: 3rem;
+	height: 3rem;
+}
+.listSquare p {
+	transition: all 0.3s;
+}

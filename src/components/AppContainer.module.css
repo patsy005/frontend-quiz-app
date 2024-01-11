@@ -1,0 +1,7 @@
+.app {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    color: var(--primary-text);
+    background: var(--background);
+  }

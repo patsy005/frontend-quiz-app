@@ -1,0 +1,35 @@
+.heading {
+	color: var(--primary-text);
+}
+.heading .bodyS {
+	margin-top: 1.6rem;
+	color: var(--secondary-text);
+	font-size: 1.2rem;
+}
+.heading .welcome-msg {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+.heading .welcome-msg h1,
+.heading .welcome-msg h2 {
+	font-size: 4rem;
+	line-height: 100%;
+}
+.heading .welcome-msg h2 {
+	font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+	.heading {
+		flex: 1;
+		flex-basis: 55%;
+	}
+	.heading .bodyS {
+		font-size: 2rem;
+	}
+	.heading .welcome-msg h1,
+	.heading .welcome-msg h2 {
+		font-size: 6.4rem;
+	}
+}
